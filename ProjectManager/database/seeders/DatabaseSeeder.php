@@ -2,6 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\Asignation;
+use App\Models\Proyect;
+use App\Models\Technology;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -13,11 +16,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
-
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+        $this->call([
+            UserSeeder::class,
+            ProyectSeeder::class,
+            TechnologySeeder::class,
+            TaskSeeder::class,
+            AsignationSeeder::class,
         ]);
     }
 }
