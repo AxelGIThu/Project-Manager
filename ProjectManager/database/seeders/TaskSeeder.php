@@ -21,5 +21,21 @@ class TaskSeeder extends Seeder
         $task->Length = 'Short';
         $task->Done = true;
         $task->save();
+        $task = new Task();
+        $task->proyect_id = 1;
+        $task->Name = 'Do an example.';
+        $task->Description = 'This is an example';
+        $task->Difficulty = 'Low';
+        $task->Length = 'Short';
+        $task->Done = true;
+        $task->save();
+        $task = new Task();
+        $task->proyect_id = 1;
+        $task->Name = 'Do an example.';
+        $task->Description = 'This is an example';
+        $task->Difficulty = 'Low';
+        $task->Length = 'Short';
+        $task->Done = true;
+        $task->save();
     }
 }

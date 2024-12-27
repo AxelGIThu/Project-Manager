@@ -17,5 +17,13 @@ class AsignationSeeder extends Seeder
         $asignation->task_id = 1;
         $asignation->user_id = 1;
         $asignation->save();
+        $asignation = new Asignation();
+        $asignation->task_id = 2;
+        $asignation->user_id = 1;
+        $asignation->save();
+        $asignation = new Asignation();
+        $asignation->task_id = 3;
+        $asignation->user_id = 1;
+        $asignation->save();
     }
 }
